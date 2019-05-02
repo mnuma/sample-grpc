@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+service Era {
+  rpc GetCurrentEra (CurrentEraMessage) returns (CurrentEraResponse) {}
+}
+
+message CurrentEraMessage {}
+
+message CurrentEraResponse {
+  string name = 1;
+}
