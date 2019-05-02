@@ -18,5 +18,5 @@ func main() {
 	 client := pb.NewEraClient(conn)
 	 message := &pb.CurrentEraMessage{}
 	 res, err := client.GetCurrentEra(context.TODO(), message)
-	 fmt.Printf("元号は『%s』 \n", res.Name)
+	 fmt.Printf("新元号は『%s』 \n", res.Name)
 }
